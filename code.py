@@ -32,6 +32,7 @@ model=svm.SVC(C=25.0, cache_size=200, class_weight=None, coef0=0.0,
     tol=0.001, verbose=False)
 model.fit(X_train,y_train)
 training_accuracy=model.score(X_train,y_train)
+print(training_accuracy)
 
 prediction=model.predict(X_test)
 
@@ -40,4 +41,5 @@ error
 
 from sklearn.metrics import accuracy_score
 testing_accuracy=accuracy_score(y_test,prediction)
+print(testing_accuracy)
 
