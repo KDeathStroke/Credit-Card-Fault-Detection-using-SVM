@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 
 
-dataset=pd.read_csv('/home/kartik/Documents/data_set.csv')
+dataset=pd.read_csv('data_set.csv')
 y=dataset['Exited'].values
 dataset=dataset.drop(['RowNumber','Surname','CustomerId','Exited'],axis=1)
 dataset=dataset.values
