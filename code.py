@@ -37,7 +37,7 @@ print(training_accuracy)
 prediction=model.predict(X_test)
 
 error=np.mean(y_test!=prediction)
-error
+print(error)
 
 from sklearn.metrics import accuracy_score
 testing_accuracy=accuracy_score(y_test,prediction)
